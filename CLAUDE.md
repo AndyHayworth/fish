@@ -2,6 +2,8 @@
 
 Mobile-first PWA that lets local fish stores and solo aquarium breeders publish a real-time, public-facing livestock availability board. Not an e-commerce platform — no cart, no checkout, no shipping. It's a menu board with a contact layer. Think "Linktree for aquarium livestock."
 
+Git is connected to Vercel hosting already
+
 See `docs/PRD.md` for the full product requirements document.
 
 ## Stack
@@ -117,3 +119,11 @@ Pages at `/[slug]` are server-rendered. They MUST:
 - Don't store uncompressed images — always compress before upload
 - Don't bypass RLS with the service role key in client-facing code
 - Don't hardcode species data — always query from the species table
+
+
+
+## SUPABASE
+- curl 'https://iffjngnppedpcczxioqi.supabase.co/rest/v1/todos' -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlmZmpuZ25wcGVkcGNjenhpb3FpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1NDAzNDksImV4cCI6MjA4NzExNjM0OX0.4swEJQ12YTJJS7q7jDmNoPDiyfAPVFQPYT6iYNQGdiE"
+
+
+
